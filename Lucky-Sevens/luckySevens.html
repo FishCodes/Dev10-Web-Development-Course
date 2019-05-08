@@ -1,0 +1,81 @@
+<!doctype html>
+
+<!--
+Name: Stephen Fishbune
+Date Created: 5/5/2019
+Most recent revision: 
+
+Description: Lucky Sevens game. Bet an amount of money and roll two die. If the die add up to 7, add $4. Otherwise, lose $1.
+--> 
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <script type="text/JavaScript" src=scripts/luckySevens.js></script>
+        <title>Lucky Sevens</title>
+
+        <style>
+            body h1 {
+                text-align: center;
+            }
+            form {
+                text-align: center;
+                margin-top: 25px;
+            }
+            form label {
+                margin-right: 10px;
+                font-size: 1.1em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Lucky Sevens</h1>
+            <form name="betSevens" onsubmit="return validateItems();">
+                <div class="form-inline form-group col-md-6 offset-md-4">
+                    <label for="startBet">Starting Bet:</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">$</div>
+                        </div>
+                        <input type="float" class="form-control" id="startBet" placeholder="0.00">
+                    </div>
+                </div>
+                <button type="submit" id="submitButton" class="btn btn-primary">Play</button>
+            </form>
+
+            <div id="results" style="display:none">
+                <h1>Results</h1>
+                <table class="table table-striped col-md-6 offset-md-3">
+                    <tbody>
+                        <tr>
+                            <td>Starting Bet</th>
+                            <td>$<span id ="bet"></span></th>
+                        </tr>
+                        <tr>
+                            <td>Total Rolls Before Going Broke</td>
+                            <td id="brokeRoll"></td>
+                        </tr>
+                        <tr>
+                            <td>Highest Amount Won</td>
+                            <td>$<span id="maxWon"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Roll Count at Highest Amount Won</td>
+                            <td id="highRoll"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
