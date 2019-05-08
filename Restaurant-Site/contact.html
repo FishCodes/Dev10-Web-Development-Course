@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!--
+Name: Stephen Fishbune
+Date Created: 4/26/2019
+Most recent revision: 5/7/2019
+
+Description: Contact Form for Restaurant Site
+--> 
+
+<html lang="en">
+    <head>
+        <title>Contact - Kenny's Restaurant</title>
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+        <script type="text/JavaScript" src=scripts/contactValidation.js></script>
+        
+        <style>
+            nav {
+                margin-bottom: 10px;
+            }
+            .required {
+                font-weight: bold;
+            }
+            label, fieldset {
+                font-size: 1.1em;
+            }
+            input[type=text], input[type=email] {
+                /*border: 2px solid #0d1f2d;*/
+                width: 40%;
+                padding: 4px;
+                margin: 12px 0;
+                border: thin solid #0d1f2d;
+                box-sizing: border-box;
+                font-size: 1.1em;
+            }
+            fieldset {
+                width: 100%;
+                padding: 12px 20px;
+                box-sizing: border-box;
+            }
+            select, textarea {
+                margin: 12px 0;
+                font-size: 1em;
+            }
+            textarea {
+                width: 100%;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: thin solid #0d1f2d;
+                border-radius: 3px;
+                background-color: #fff;
+                resize: none;
+            }
+            button[type=submit] {
+                font-size: 1.2em;
+                background-color: #591616;
+                color: rgb(221, 215, 205);
+                padding: 4px 8px;
+                margin-bottom: 12px;
+            }
+            button[type=submit]:hover {
+                background-color: rgb(221, 215, 205);
+                color: #591616;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">    
+            <header class="jumbotron mb-2" style="background-color: #8C2323;">
+                <h1>Kenny's American Dream Restaurant</h1>
+                <h4 class="text-right mt-5">Soon! Taste Kenny's in MN.</h4>
+            </header>
+            
+            <nav>
+                <a class="btn badge-pill" id="home" href="index.html"><span class="fa fa-home"></span>Home</a>
+                <a class="btn badge-pill" href="menu.html">Menu</a>
+                <a class="btn badge-pill" href="contact.html">Contact Us</a>
+                <noscript>This site is best viewed with JavaScript enabled!</noscript>
+            </nav>
+
+            <form name="contactUs" action="" method="POST" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name" class="required">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="required">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="form-group"> 
+                    <label for="phone" class="required">Phone:</label>
+                    <input type="text" class="form-control" id="phone" name="phone">
+                </div>
+
+                <div class="form-group form-inline">
+                    <label for="reason" class="required mr-2">Reason for Inquiry: </label>
+                    <select id="reason" class="form-control" name="reason">
+                        <option value="catering" selected>Catering</option>
+                        <option value="party">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="info">Additional Information: </label>
+                    <textarea id="info" class="form-control" rows=4; name="info"></textarea>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend class="required">Have you been to the restaurant?</legend>
+                    <div class="form-check form-check-inline"> 
+                        <input class="form-check-input" type="radio" id="choice1" name="questionnaire" value="no" checked>
+                        <label class="form-check-label" for="choice1">No</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="choice2" name="questionnaire" value="yes">
+                        <label class="form-check-label" for="choice2">Yes</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend>Best days to contact you:</legend>
+                    <div class="form-check form-check-inline"> 
+                        <input class="form-check-input" type="checkbox" id="monday" name="day" value="monday">
+                        <label class="form-check-label" for="monday">M</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="tuesday" name="day" value="tuesday">
+                        <label class="form-check-label" for="tuesday">T</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="wednesday" name="day" value="wednesday">
+                        <label class="form-check-label" for="wednesday">W</label>
+                    </div>
+                    <div class="form-check form-check-inline">    
+                        <input class="form-check-input" type="checkbox" id="thursday" name="day" value="thursday">
+                        <label class="form-check-label" for="thursday">Th</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="friday" name="day" value="friday">
+                        <label class="form-check-label" for="friday">F</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" id="submitButton" class="btn">Send Request</button>
+            </form>
+
+            <footer>
+                <p>9435 Stonybrook Road Manassas, VA 20109</p>
+                <p>804-555-0176</p>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+/*
+Name: Stephen Fishbune
+Date Created: 5/2/2019
+Most recent revision: 5/7/2019
+
+Description: Restaurant Site style sheet
+*/
+
+body {
+    background-color: #D9CBB4;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron, footer {
+    background-color: #8C2323;
+    color: rgb(219, 210, 196);
+    text-align: center;
+    padding: 30px 10px 40px 10px;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+nav {
+    background-color: rgb(216, 186, 133);
+    border-top: 3px groove rgb(219, 89, 77);
+    border-bottom: 3px groove rgb(219, 89, 77);
+    margin-bottom: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+nav .btn {
+    background-color: rgb(219, 89, 77);
+    color: #fff;
+}
+
+nav .btn:visited {
+    background-color: rgb(153, 77, 70);
+}
+
+nav .btn:hover {
+    font-weight: bolder;
+}
+
+#home {
+    margin-left: 5px
+}
+
+.card-header {
+    background-color:rgb(185, 57, 57);
+    border-left: solid rgb(248, 167, 74);
+    border-right: solid rgb(248, 167, 74);
+}
+
+.card-header button {
+    font-family: 'Pacifico', cursive;
+    background-color:rgb(223, 59, 59);
+    color:rgb(219, 210, 196);
+    font-size: 1.3em;
+}
+
+.card-header button:hover {
+    font-weight: bold;
+    color:rgb(219, 210, 196);
+}
+
+.card-body {
+    background-color: rgb(216, 186, 133);
+    text-align: center;
+}
+
+.card-body p {
+    font-size: 1.1em;
+}
+
+/*nav a:visited {
+    color: rgb(109, 91, 71);
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav a:active {
+    text-decoration: none;
+}*/
+
+

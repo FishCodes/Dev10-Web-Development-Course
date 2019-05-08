@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!--
+Name: Stephen Fishbune
+Date Created: 4/26/2019
+Most recent revision: 5/7/2019
+
+Description: Restaurant Site home page
+--> 
+
+<html lang="en">
+    <head>
+        <title>Home - Kenny's Restaurant</title>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    
+        </head>
+
+    <body>
+        <div class="container">    
+            <header class="jumbotron mb-2">
+                <h1>Kenny's American Dream Restaurant</h1>
+                <h4 class="text-right mt-5">Soon! Taste Kenny's in MN.</h4>
+            </header>
+            
+            <nav>
+                <a class="btn badge-pill" id="home" href="index.html"><span class="fa fa-home"></span>Home</a>
+                <a class="btn badge-pill" href="menu.html">Menu</a>
+                <a class="btn badge-pill" href="contact.html">Contact Us</a>
+                <noscript>This site is best viewed with JavaScript enabled!</noscript>
+            </nav>
+
+            <div class="row">
+                <figure class="col-md-6 offset-md-3">
+                    <img src="images/cheeseburger-600px.jpg" alt="Kenny's famous burger and fries" class="img-fluid"  />
+                </figure>
+            </div>
+            <div class="row">
+                <article class="col-12 col-lg-10 offset-lg-1" style="text-align: center; font-size: 1.1em; width: 65%; margin: 0px auto 25px auto">
+                <p>
+                    Since it was opened in 1942, Kenny's American Dream Restaurant has been a staple of downtown Manassas. Growing up on a small farm outside
+                    the town, Kenny Miller would take some of the crops his parents harvested and experiment with his own recipes. Eventually, Kenny started his own
+                    restaurant in order to share his food with the community. When one of his first customers took their first bite, they said, "Now this is the
+                    American Dream!" The name stuck, and Kenny's American Dream Restaurant became known across the state. </p> <p>To this day, Kenny's only uses ingredients
+                    grown locally, ensuring that each and every mouthful is filled with the freshest ingredients. From burgers to salads, come get a taste of the
+                    American Dream at Kenny's American Dream Restaurant!
+                </p>
+                </article>
+            </div>
+
+            <div class="row">
+                <article class="accordion col-lg-8 offset-lg-2 mb-5" id="infoAccordion">
+                    <div class="card">
+                        <div class="card-header" id="info1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    New Location!
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="info1" data-parent="#infoAccordion">
+                            <div class="card-body">
+                                <p>We are proud to announce that Kenny's is expanding for the first time! Taste the American Dream in Minnnesota soon.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="info2">
+                            <h5 class="mb-0">
+                                <button class="btn btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Seasonal Menu!
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="info2" data-parent="#infoAccordion">
+                            <div class="card-body">
+                                <p>We're rolling out our seasonal menu, with special options for this season.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="info3">
+                            <h5 class="mb-0">
+                                <button class="btn btn-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Drink of the Month!
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="info3" data-parent="#infoAccordion">
+                            <div class="card-body">
+                                <p>The Drink of the Month is SG Special Brew.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <footer>
+                <p>9435 Stonybrook Road Manassas, VA 20109</p>
+                <p>804-555-0176</p>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

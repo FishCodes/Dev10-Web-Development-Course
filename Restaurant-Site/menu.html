@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<!--
+Name: Stephen Fishbune
+Date Created: 4/26/2019
+Most recent revision: 5/7/2019
+
+Description: Menu Item Page for Restaurant Site
+--> 
+
+<html lang="en">
+    <head>
+        <title>Menu - Kenny's Restaurant</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        
+        <style>
+            body h3 {
+                font-weight: bold;
+                text-align: center;
+            }
+            body p {
+                text-align: center;
+            }
+            caption {
+                color: #0d1f2d;
+                font-weight: bold;
+                font-size: 1.5em;
+                caption-side: top;
+                text-align: center;
+            }
+            table, th, td {
+                border: 1px solid #0d1f2d;
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+            table {
+                width: 50%;
+                margin: 0px auto 12px auto;
+            }
+            tr {
+                height: 30px;
+            }
+            tr:nth-child(odd) {
+                background-color: rgb(216, 186, 133);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="jumbotron mb-2" style="background-color: #8C2323;">
+                <h1>Kenny's American Dream Restaurant</h1>
+                <h4 class="text-right mt-5">Soon! Taste Kenny's in MN.</h4>
+            </header>
+            
+            <nav>
+                <a class="btn badge-pill" id="home" href="index.html"><span class="fa fa-home"></span>Home</a>
+                <a class="btn badge-pill" href="menu.html">Menu</a>
+                <a class="btn badge-pill" href="contact.html">Contact Us</a>
+                <noscript>This site is best viewed with JavaScript enabled!</noscript>
+            </nav>
+
+            <div class="row">
+                <article class="col-md-4">
+                    <h3>Burger and Fries</h3>
+                    <p>An American Classic!<br />Your choice - with or without cheese<br />Pickle, onion, tomato, and lettuce<br />
+                        Served with our famous thick cut french fries<br />$7.95
+                    </p>
+                </article>
+
+                <article class="col-md-4">
+                    <h3>Hot Dog and Chips</h3>
+                    <p>A Summer Classic!<br />Your choice - white or wheat bun<br />Relish, mustard, and ketchup<br />
+                        Served with our house-made chips<br />$7.95
+                    </p>
+                </article>
+
+                <article class="col-md-4">
+                    <h3>Italian Sausage and Peppers</h3>
+                    <p>An All-Time Favorite!<br />Your choice - mild or spicy Cole Slaw<br />
+                        Served with garlic mashers<br />$10.95
+                    </p>
+                </article>
+            </div>
+
+            <div class="row">
+                <article class="col-md-4">
+                    <h3>Tenderloin Sandwich and Chips</h3>
+                    <p>Really Hits the Spot!<br />Plain or Sesame Seed bun<br />Pickle, onion, tomato, and lettuce<br />
+                        Served with our house-made chips<br />$8.95
+                    </p>
+                </article>
+
+                <article class="col-md-4">
+                    <h3>House Salad</h3>
+                    <p>On the Lighter Side<br />Your choice - with or without cheese<br />Iceberg lettunce, tomatoes, peppers<br />
+                        Thousand Island or Ranch<br />Dressing served with a dinner roll<br />$6.95            
+                    </p>
+                </article>
+
+                <article class="col-md-4">
+                    <h3>Brisket Sandwich and fries</h3>
+                    <p>A Taste of Texas!<br />Smoked Brisket on thick-cut Texas Toast<br />Cole Slaw<br />
+                        Served with our famous thick-cut french fries<br />$7.95
+                    </p>
+                </article>
+            </div>
+
+            <div class="row">
+                <table class="col-md-6 offset-md-3">
+                    <caption>Beverages</caption>
+                    <tbody>
+                        <tr>
+                            <td>Root Beer</td>
+                            <td>$3.00</td>
+                        </tr>
+                        <tr>
+                            <td>Bottled Water</td>
+                            <td>$1.25</td>
+                        </tr>
+                        <tr>
+                            <td>Lemonade</td>
+                            <td>$1.00</td>
+                        </tr>
+                        <tr>
+                            <td>Iced Tea</td>
+                            <td>$1.25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <footer>
+                <p>9435 Stonybrook Road Manassas, VA 20109</p>
+                <p>804-555-0176</p>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
