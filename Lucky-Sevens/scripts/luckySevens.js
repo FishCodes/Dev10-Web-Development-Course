@@ -19,6 +19,7 @@ function validateItems() {
     if (bet <= 0) {
         alert("Starting bets must be above $0");
         document.forms["betSevens"]["startBet"].className = "form-control has-error";
+        document.forms["betSevens"]["startBet"].value = "";
         document.forms["betSevens"]["startBet"].focus();
         return false;
     }
